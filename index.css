@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: kumbh_sans;
+    src: url(./font/Kumbh_Sans/KumbhSans-Light.ttf);
+}
+@font-face {
+    font-family: kumbh_sansbold;
+    src: url(./font/Kumbh_Sans/KumbhSans-Bold.ttf);
+}
+
+html, body{
+    background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
+    background-repeat: no-repeat;
+    /* min-height: 850px; */
+    min-width: 100%;
+    color: hsl(240, 6%, 50%);
+}
+.wrapper{
+    min-height: 820px;
+}
+.mainback{
+    background-color: white;
+    height: auto;
+    margin: 150px 7% 50px 7%;
+    position: absolute;
+    width: 86%;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+.imageback{
+    display: flex;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+    background-position: 50% 0; 
+
+}
+.imageback img{
+    top: -110px;
+    position: absolute;
+    margin: auto;
+}
+.images{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-family: kumbh_sansbold;
+    color: hsl(238, 29%, 16%);
+    font-size: 40px;
+}
+.bodycopy{
+    font-family: kumbh_sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto 15px;
+}
+
+
+p{
+    width: 100%;
+}
+.question{
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+}
+.answer{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+}
+.question:hover .answer{
+    display: flex;
+    margin-top: 7px;
+}
+.question:hover{
+    height: 75px;
+    width: 100%;
+}
+.question p:hover{
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+    font-family: kumbh_sansbold;
+}
+
+
+hr{
+    border: solid 1px hsl(240, 5%, 91%);
+}
+
+i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
+    font-size: 14px;
+    color: hsl(14, 88%, 65%);
+    float: right;
+}
+.question:hover .fa-angle-down, .question .fa-angle-up{
+    display: none;
+}
+.question:hover .fa-angle-up{
+    display: inline;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 30px;
+    background-color: hsl(238, 29%, 16%);
+    font-family: kumbh_sansbold;}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* @media only screen and (max-height:550px){
+    html, body{
+        min-height: 720px;
+    }
+    .wrapper{
+        min-height: 700px;
+    }
+    .mainback{
+        height: auto;
+        margin: 110px 7% 40px 7%;
+    }
+    .imageback{
+        height: 130px;
+    }
+    .imageback img{
+        height: 170px;
+        width: fit-content;
+        top: -90px;
+    }
+    .question{
+        margin: 20px 0;
+    }
+    .question:hover{
+        height: 40px;
+    }
+} */
+
+
+/* @media only screen and (min-height:1024px){
+    html, body{
+        min-height: 100vh;
+    }
+    .wrapper{
+        min-height: 100vh;
+    }
+    .attribution{
+        height: 3vh;
+    }
+} */
+
+@media only screen and (min-width:1024px) {
+    /* body{
+        min-height: 100vh;        
+    } */
+    .wrapper{
+        min-height: 97vh;
+        min-width: 98vw;
+ 
+    }
+    h1{
+        margin: 40px 20px 20px 10px;
+        text-align: unset;
+    }
+    .mainback{
+        width: 75vw;
+        height: 70vh;
+        margin: 13vh 15vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 0px;
+        padding: 0;
+        position: absolute;
+    }
+
+    .imageback{
+        display: none;
+    }
+    .images{
+        min-width: 40vw;
+        display: grid;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -600px -300px; 
+        /* top right bottom left */
+    }
+    .imageback2{
+        overflow: hidden;
+        height: 70vh;
+        width: 40vw;
+    }
+
+
+    .imageback2 img{
+        position: relative;
+        left: -6vw;
+        top: 10vh;
+    }
+    #left {
+        overflow:visible;
+        position: absolute;
+        top: 130px;
+        left: -1vw;
+    }
+    .contents{
+        width: 30vw;
+        margin-right: 5vw;
+    }
+    .bodycopy{
+        height: 100%;
+    }
+    .question{
+        height: unset;
+    }
+    .question:hover{
+        height: 60px;
+    }
+    
+    .attribution{
+        height: 3vh;
+    }
+}
+
+
