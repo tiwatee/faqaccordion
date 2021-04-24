@@ -90,7 +90,7 @@ p{
     height: 75px;
     width: 100%;
 }
-.question p:hover{
+.question:hover p{
     color: hsl(238, 29%, 16%);
     font-weight: 700;
     font-family: kumbh_sansbold;
@@ -163,24 +163,41 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
         height: 3vh;
     }
 } */
-
-@media only screen and (min-width:1024px) {
-    /* body{
-        min-height: 100vh;        
-    } */
+/* and (orientation: landscape)  */
+@media only screen and (min-width:768px) {
+    .wrapper{
+        height: 97vh;
+    }
+    .mainback{
+        width: 70vw;
+        margin:20vh 15vw;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .question{
+        font-size: 15px;
+    }
+    .question:hover{
+        height: 45px;
+    }
+    .attribution{
+        height: 3vh;
+    }
+}
+@media only screen and (min-width:1024px){
     .wrapper{
         min-height: 97vh;
         min-width: 98vw;
- 
     }
     h1{
         margin: 40px 20px 20px 10px;
         text-align: unset;
     }
     .mainback{
-        width: 75vw;
+        width: 80vw;
         height: 70vh;
-        margin: 13vh 15vw;
+        margin: 13vh 10vw;
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 0px;
@@ -218,8 +235,8 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
         left: -1vw;
     }
     .contents{
-        width: 30vw;
-        margin-right: 5vw;
+        width: 37vw;
+        margin-right: 3vw;
     }
     .bodycopy{
         height: 100%;
@@ -228,11 +245,18 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
         height: unset;
     }
     .question:hover{
-        height: 60px;
+        height: 50px;
     }
     
     .attribution{
         height: 3vh;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    
+    .question:hover{
+        height: 45px;
     }
 }
 
