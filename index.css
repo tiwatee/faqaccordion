@@ -12,11 +12,9 @@
     font-family: kumbh_sansbold;
     src: url(./font/Kumbh_Sans/KumbhSans-Bold.ttf);
 }
-
-html, body{
+body{
     background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
     background-repeat: no-repeat;
-    /* min-height: 850px; */
     min-width: 100%;
     color: hsl(240, 6%, 50%);
 }
@@ -61,7 +59,7 @@ h1{
 }
 .bodycopy{
     font-family: kumbh_sans;
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 400;
     margin: auto 15px;
 }
@@ -69,29 +67,22 @@ h1{
 
 p{
     width: 100%;
+    font-size: 1em;
 }
 .question{
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0 0.4em auto;
     position: relative;
     display: inline-block;
 }
 .answer{
     display: none;
     position: absolute;
-    z-index: 1;
-    
+    z-index: 1;    
 }
-.question:hover .answer{
-    display: flex;
-    margin-top: 7px;
-}
-.question:hover{
-    height: 75px;
-    width: 100%;
-}
+
 .question:hover p{
-    color: hsl(238, 29%, 16%);
+    color: hsl(14, 88%, 65%);
     font-weight: 700;
     font-family: kumbh_sansbold;
 }
@@ -106,13 +97,6 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
     color: hsl(14, 88%, 65%);
     float: right;
 }
-.question:hover .fa-angle-down, .question .fa-angle-up{
-    display: none;
-}
-.question:hover .fa-angle-up{
-    display: inline;
-}
-
 
 .attribution {
     font-size: 11px;
@@ -124,46 +108,6 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
     color: hsl(228, 45%, 44%);
 }
 
-/* @media only screen and (max-height:550px){
-    html, body{
-        min-height: 720px;
-    }
-    .wrapper{
-        min-height: 700px;
-    }
-    .mainback{
-        height: auto;
-        margin: 110px 7% 40px 7%;
-    }
-    .imageback{
-        height: 130px;
-    }
-    .imageback img{
-        height: 170px;
-        width: fit-content;
-        top: -90px;
-    }
-    .question{
-        margin: 20px 0;
-    }
-    .question:hover{
-        height: 40px;
-    }
-} */
-
-
-/* @media only screen and (min-height:1024px){
-    html, body{
-        min-height: 100vh;
-    }
-    .wrapper{
-        min-height: 100vh;
-    }
-    .attribution{
-        height: 3vh;
-    }
-} */
-/* and (orientation: landscape)  */
 @media only screen and (min-width:768px) {
     .wrapper{
         height: 97vh;
@@ -175,17 +119,17 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
     h1{
         font-size: 40px;
     }
-    .question{
-        font-size: 15px;
+    .bodycopy{
+        font-size: 1em;
     }
-    .question:hover{
-        height: 45px;
+    .question{
+        font-size: 1.1em;
     }
     .attribution{
         height: 3vh;
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) and (orientation:landscape){
     .wrapper{
         min-height: 97vh;
         min-width: 98vw;
@@ -214,7 +158,6 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
         background-image: url(./images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-position: -600px -300px; 
-        /* top right bottom left */
     }
     .imageback2{
         overflow: hidden;
@@ -236,16 +179,14 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
     }
     .contents{
         width: 37vw;
-        margin-right: 3vw;
+        margin-right: 13vw;
     }
     .bodycopy{
         height: 100%;
+        font-size: 0.9em;
     }
     .question{
         height: unset;
-    }
-    .question:hover{
-        height: 50px;
     }
     
     .attribution{
@@ -254,9 +195,11 @@ i[class="fa fa-angle-down"], i[class="fa fa-angle-up"]{
 }
 
 @media only screen and (min-width:1200px){
-    
-    .question:hover{
-        height: 45px;
+    .bodycopy{
+        font-size: 0.8em;
+    }
+    .question{
+        font-size: 1em;
     }
 }
 
