@@ -20,7 +20,7 @@ for (i = 0; i < acc.length; i++) {
         } else {
             answer.style.display = "block";
             answer.style.marginRight="4vw"
-            this.parentElement.style.height="5.3em"
+            this.parentElement.style.height="5.4em"
             questionP.style.color="black"
             questionP.style.fontWeight="700"
             iconn.classList.add("fa-angle-up");
